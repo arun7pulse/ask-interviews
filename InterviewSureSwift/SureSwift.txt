@@ -1,0 +1,47 @@
+I always belive teams can do great things when set in right direction.
+These are my adaption after have seen different management style in the works.
+Start with understanding the inviduals and their interest and skills.
+Adhere to process event loop to meet and collaborate with people and projects.
+Periodic reviews and construtive feedback acceralate the growth and the outcome over the time.
+Mapping the tasks, setting the right course, access to everyone, availble for guidence and set example by showing the leadership.
+
+There was an regular review with my reportee, and i had to deliver the feedback received from client team tasks being handled.
+So i had started with whats working and the value it has given to the team.
+Explained the importance of the requirement of the client and its impact in the overall system.
+Discussed on what went wrong and how it can be improved and what tools or resources needed to acheive that better.
+Worked with the reportee to come up with action plan to course correct. That was well received and improved the process in place.
+
+Integer to Roman:
+Roman numerals are denoted with certain English character Such as I, X, L, C, D, M.  
+And the Rules are,
+    Starts with letter I and sequence will be incrementing by adding the letter.
+    Same letter cannot be appear more than 3 times
+    Smaller letter can be placed before greater number to represent the sequence.
+    Smaller letter can be placed after greater number to represent the sequence.
+    Romen system always starts from left to right to decode.
+So i came up with an dictionary to have the key as letters and value as its numerical value.
+Also the one off where rule 2 will be impacting the sequence and added as key value pair. 
+Dictionary has been reversed So that we can assign letter from left to right of the number.
+program will be in for loop to check given number recursively from greater number to smaller number. 
+    if number - value of each dict value. 
+
+
+Integer to Roman Explanation: 
+
+Roman numerals also same as base ten decimal system but represented in symbol. 
+
+I = 1,V = 5,X = 10,L = 50,C = 100,D = 500,M = 1000
+
+Roman numerals represented from left to right in the number system. 
+Smallest can be represent is 1 and the largest is 3999. 
+Roman letters are used with addition notation and few cases of substration notation. 
+
+So i came up with dictionary to have the decimal representation of symbol and value. 
+decimal_dict = {'I':1, 'IV':4, 'V':5, 'IX':9, 'X':10, 'XL':40, 'L':50, 
+                        'XC':90, 'C':100, 'CD':400, 'D':500, 'CM':900, 'M':1000 }
+Do the intital check of the range 1 to 3999. 
+Now the program will loop though from large decimal places to smaller decimal places. 
+    process from left to right of the given number so we can find the closest representation of symbol
+        do it until it ended with right most digit and keep appending the symbol to the result string variable. 
+
+Result is roman representation. 
